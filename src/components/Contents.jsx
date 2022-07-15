@@ -10,7 +10,7 @@ function Contents() {
   const [filterToggle, setFilterToggle] = useState(false);
 
   const fetchFilterData = async (data) => {
-    const { grade, subject, chapter, language } = data;
+    const { grade = "", subject = " ", chapter = "", language = "" } = data;
     const response = await axios.get(
       `http://143.110.254.46:8089/api/video/?language=${language}&subject=${subject}&grade=${grade}&chapter_no=${chapter}&`
     );
@@ -107,7 +107,7 @@ function Contents() {
                     <select
                       className="form-select"
                       onChange={selectHandler("grade")}
-                      value={dropdownData.class || ""}
+                      value={dropdownData.grade || ""}
                     >
                       <option>select class</option>
                       <option value="1">1</option>

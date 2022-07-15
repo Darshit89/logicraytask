@@ -6,12 +6,13 @@ import Practice from "./components/Practice";
 import Videos from "./components/Videos";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
+import NavHeader from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <Navbar />
+        <NavHeader />
       </header>
 
       <BrowserRouter>
