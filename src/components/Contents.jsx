@@ -35,7 +35,7 @@ function Contents() {
   return (
     <div>
       <div className="row">
-        <div className="col-12 m-2  text-right">
+        <div className="d-md-none d-sm-block d-block">
           <button
             className=" btn btn-primary "
             onClick={() => setFilterToggle(!filterToggle)}
